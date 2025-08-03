@@ -1,7 +1,7 @@
 {
-    "name": "amenadiel/jpgraph",
+    "name": "hbagheri/jpgraph",
     "type": "library",
-    "description": "Composer Friendly, full refactor of JpGraph, library to make graphs and charts",
+    "description": "Composer Friendly, full refactor of JpGraph, library to make graphs and charts - PHP 8.2 compatible, deprecated removed",
     "keywords": [
         "graph",
         "chart",
@@ -9,10 +9,10 @@
         "jpgraph",
         "data"
     ],
-    "homepage": "http://jpgraph.net/",
+    "homepage": "https://github.com/hbagheri/jpgraph",
     "license": "QPL-1.0",
     "require": {
-        "php": ">=7.2.0",
+        "php": ">=8.0",
         "ext-gd": "*"
     },
     "require-dev": {
@@ -33,7 +33,7 @@
             "indent-size": 4,
             "indent-style": "space"
         },
-        "version": "4.1.1"
+        "version": "4.1.1-custom"
     },
     "autoload": {
         "psr-4": {
@@ -63,6 +63,12 @@
         "coverage": "XDEBUG_MODE=coverage php vendor/bin/codecept run unit --coverage --coverage-xml"
     },
     "support": {
-        "issues": "https://github.com/huasofoundries/jpgraph/issues"
-    }
+        "issues": "https://github.com/hbagheri/jpgraph/issues"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/hbagheri/jpgraph"
+        }
+    ]
 }

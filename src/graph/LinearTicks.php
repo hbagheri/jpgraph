@@ -25,7 +25,7 @@ class LinearTicks extends Ticks
     private $iManualMinTickPos;
     private $iManualTickLabels;
     private $iAdjustForDST = false; // If a date falls within the DST period add one hour to the diaplyed time
-
+    private $ticks_label=[];
     public function __construct()
     {
         $this->precision = -1;

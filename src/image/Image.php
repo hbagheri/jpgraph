@@ -263,13 +263,21 @@ class Image
         }
     }
 
-    public static function GetWidth($aImg)
+    public static function GetWidth($aImg = null)
     {
+        if ($aImg === null) {
+            $aImg = $this->img;
+        }
+
         return imagesx($aImg);
     }
 
-    public static function GetHeight($aImg)
+    public static function GetHeight($aImg = null)
     {
+        if ($aImg === null) {
+            $aImg = $this->img;
+        }
+
         return imagesy($aImg);
     }
 
@@ -1037,16 +1045,12 @@ class Image
                     // Do nothing the text is drawn at baseline by default
                 }
             }
-
-            $x = (int) round($x);
-            $y = (int) round($y);
-
             imagettftext(
                 $this->img,
                 $this->font_size,
                 $dir,
-                $x,
-                $y,
+                (int)round($x),
+                (int)round($y),
                 $this->current_color,
                 $this->font_file,
                 $txt
@@ -1151,16 +1155,12 @@ class Image
                 $xl -= $bbox[0] / 2;
                 $yl = $y - $yadj;
                 //$xl = $xl- $xadj;
-
-                $xl = (int) round($xl);
-                $yl = (int) round($yl - ($h - $fh) + $fh * $i);
-
                 imagettftext(
                     $this->img,
                     $this->font_size,
                     $dir,
                     $xl,
-                    $yl,
+                    $yl - ($h - $fh) + $fh * $i,
                     $this->current_color,
                     $this->font_file,
                     $tmp[$i]
@@ -1608,7 +1608,8 @@ class Image
         }
         $old = $this->line_weight;
         imagesetthickness($this->img, 1);
-        imagefilledpolygon($this->img, $pts, safe_count($pts) / 2, $this->current_color);
+//        imagefilledpolygon($this->img, $pts, safe_count($pts) / 2, $this->current_color);
+        imagefilledpolygon($this->img, $pts, $this->current_color);
         $this->line_weight = $old;
         imagesetthickness($this->img, $old);
     }

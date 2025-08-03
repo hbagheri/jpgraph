@@ -184,7 +184,7 @@ class ImgStreamCache
     public function GetAndStream($aImage, $aCacheFileName)
     {
         if ($this->Isvalid($aCacheFileName)) {
-            return $this->StreamImgFile($aImage, $aCacheFileName);
+            $this->StreamImgFile($aImage, $aCacheFileName);
         } else {
             return false;
         }

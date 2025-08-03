@@ -57,20 +57,75 @@ class DateLocale
         }
 
         $this->iLocale = $aLocale;
-        for ($i = 0, $ofs = 0 - strftime('%w'); $i < 7; $i++, $ofs++) {
-            $day                         = strftime('%a', strtotime("${ofs} day"));
-            $day[0]                      = strtoupper($day[0]);
-            $this->iDayAbb[$aLocale][]   = $day[0];
-            $this->iShortDay[$aLocale][] = $day;
+
+        $this->iDayAbb[$aLocale] = [];
+        $this->iShortDay[$aLocale] = [];
+
+        $formatterDay = new \IntlDateFormatter(
+            $aLocale,
+            \IntlDateFormatter::FULL,
+            \IntlDateFormatter::NONE,
+            date_default_timezone_get(),
+            \IntlDateFormatter::GREGORIAN,
+            'EEE'
+        );
+
+        $formatterDayFull = new \IntlDateFormatter(
+            $aLocale,
+            \IntlDateFormatter::FULL,
+            \IntlDateFormatter::NONE,
+            date_default_timezone_get(),
+            \IntlDateFormatter::GREGORIAN,
+            'EEEE'
+        );
+
+        $baseDate = new \DateTime('Sunday');
+
+        for ($i = 0; $i < 7; $i++) {
+            $date = clone $baseDate;
+            $date->modify("+{$i} day");
+
+            $short = $formatterDay->format($date);
+            $full = $formatterDayFull->format($date);
+            $firstLetter = mb_strtoupper(mb_substr($short, 0, 1), 'UTF-8');
+
+            $this->iDayAbb[$aLocale][] = $firstLetter;
+            $this->iShortDay[$aLocale][] = $short;
         }
 
+        $this->iShortMonth[$aLocale] = [];
+        $this->iMonthName[$aLocale] = [];
+
+        $formatterMonthShort = new \IntlDateFormatter(
+            $aLocale,
+            \IntlDateFormatter::FULL,
+            \IntlDateFormatter::NONE,
+            date_default_timezone_get(),
+            \IntlDateFormatter::GREGORIAN,
+            'MMM'
+        );
+
+        $formatterMonthFull = new \IntlDateFormatter(
+            $aLocale,
+            \IntlDateFormatter::FULL,
+            \IntlDateFormatter::NONE,
+            date_default_timezone_get(),
+            \IntlDateFormatter::GREGORIAN,
+            'MMMM'
+        );
+
         for ($i = 1; $i <= 12; ++$i) {
-            list($short, $full)            = explode('|', strftime('%b|%B', strtotime("2001-${i}-01")));
+            $date = new \DateTime("2001-$i-01");
+
+            $short = $formatterMonthShort->format($date);
+            $full = $formatterMonthFull->format($date);
+
             $this->iShortMonth[$aLocale][] = ucfirst($short);
-            $this->iMonthName[$aLocale][]  = ucfirst($full);
+            $this->iMonthName[$aLocale][] = ucfirst($full);
         }
 
         setlocale(LC_TIME, $pLocale);
+
 
         return true;
     }
