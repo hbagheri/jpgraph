@@ -43,10 +43,10 @@
 
 ```sh
 composer require hbagheri/jpgraph
-
+```
 ## استفاده
 همانند نسخه اصلی JpGraph، کافی است در پروژه خود composer install کنید و سپس از autoload استفاده کنید:
-## php
+```php
 require_once 'vendor/autoload.php';
 
 use Amenadiel\JpGraph\Graph;
