@@ -6,8 +6,8 @@
 
 require_once __DIR__ . '/../../src/config.inc.php';
 
-use Amenadiel\JpGraph\Graph;
-use Amenadiel\JpGraph\Plot;
+use hbvsoft\JpGraph\Graph;
+use hbvsoft\JpGraph\Plot;
 
 // Setup some dummy targets for the CSIM
 $n = 5;

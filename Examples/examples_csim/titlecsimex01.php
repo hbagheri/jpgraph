@@ -12,9 +12,9 @@ if (DEBUGMODE) {
     error_reporting(E_ALL);
 }
 
-use Amenadiel\JpGraph\Graph;
-use Amenadiel\JpGraph\Plot;
-use Amenadiel\JpGraph\Text;
+use hbvsoft\JpGraph\Graph;
+use hbvsoft\JpGraph\Plot;
+use hbvsoft\JpGraph\Text;
 
 $datay = [12, 26, 9, 17, 31];
 

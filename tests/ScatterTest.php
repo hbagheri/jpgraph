@@ -10,11 +10,11 @@ use Codeception\Util\Debug;
  * @group ready
  *
  * @internal
- * 
+ *
  */
 class ScatterTest extends \Codeception\Test\Unit
 {
-    use Amenadiel\JpGraph\UnitTest\UnitTestTrait;
+    use hbvsoft\JpGraph\UnitTest\UnitTestTrait;
 
     public static $fixTures = [];
 

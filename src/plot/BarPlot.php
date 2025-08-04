@@ -4,11 +4,11 @@
  * JPGraph v4.0.3
  */
 
-namespace Amenadiel\JpGraph\Plot;
+namespace hbvsoft\JpGraph\Plot;
 
-use Amenadiel\JpGraph\Graph;
-use Amenadiel\JpGraph\Image;
-use Amenadiel\JpGraph\Util;
+use hbvsoft\JpGraph\Graph;
+use hbvsoft\JpGraph\Image;
+use hbvsoft\JpGraph\Util;
 
 /*
  * File:        JPGRAPH_BAR.PHP

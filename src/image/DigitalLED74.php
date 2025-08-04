@@ -4,9 +4,9 @@
  * JPGraph v4.0.3
  */
 
-namespace Amenadiel\JpGraph\Image;
+namespace hbvsoft\JpGraph\Image;
 
-use Amenadiel\JpGraph\Util;
+use hbvsoft\JpGraph\Util;
 
 /*
  * File:        JPGRAPH_LED.PHP

@@ -4,9 +4,9 @@
  * JPGraph v4.0.3
  */
 
-namespace Amenadiel\JpGraph\Graph;
+namespace hbvsoft\JpGraph\Graph;
 
-use Amenadiel\JpGraph\Text;
+use hbvsoft\JpGraph\Text;
 
 /**
  * @class RadarAxis

@@ -4,9 +4,9 @@
  * JPGraph v4.0.3
  */
 
-namespace Amenadiel\JpGraph\Image;
+namespace hbvsoft\JpGraph\Image;
 
-use Amenadiel\JpGraph\Text\Text;
+use hbvsoft\JpGraph\Text\Text;
 
 /**
  * @class Footer

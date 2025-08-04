@@ -4,7 +4,7 @@
  * JPGraph v4.0.3
  */
 
-namespace Amenadiel\JpGraph\Plot;
+namespace hbvsoft\JpGraph\Plot;
 
 /*
  * File:        JPGRAPH_GRADIENT.PHP
@@ -14,7 +14,7 @@ namespace Amenadiel\JpGraph\Plot;
  * //
  * // Copyright (c) Asial Corporation. All rights reserved.
  */
-use Amenadiel\JpGraph\Util;
+use hbvsoft\JpGraph\Util;
 
 /**
  * @class Gradient

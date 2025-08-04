@@ -4,7 +4,7 @@
  * JPGraph v4.0.3
  */
 
-use Amenadiel\JpGraph\Image\DigitalLED74;
+use hbvsoft\JpGraph\Image\DigitalLED74;
 
 require_once __DIR__ . '/../../src/config.inc.php';
 

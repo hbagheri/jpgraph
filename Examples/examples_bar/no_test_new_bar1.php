@@ -5,8 +5,8 @@
  */
 
 require_once __DIR__ . '/../../src/config.inc.php';
-use Amenadiel\JpGraph\Graph;
-use Amenadiel\JpGraph\Plot;
+use hbvsoft\JpGraph\Graph;
+use hbvsoft\JpGraph\Plot;
 
 $data1y = [47, 80, 40, 116];
 $data2y = [61, 30, 82, 105];

@@ -1,5 +1,5 @@
 {
-    "name": "hbagheri/jpgraph",
+    "name": "hbvsoft/jpgraph",
     "type": "library",
     "description": "Composer Friendly, full refactor of JpGraph, library to make graphs and charts - PHP 8.2 compatible, deprecated removed",
     "keywords": [
@@ -37,21 +37,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Amenadiel\\JpGraph\\": "src/",
-            "Amenadiel\\JpGraph\\Graph\\": "src/graph",
-            "Amenadiel\\JpGraph\\Graph\\Scale\\": "src/graph/scale",
-            "Amenadiel\\JpGraph\\Graph\\Tick\\": "src/graph/tick",
-            "Amenadiel\\JpGraph\\Graph\\Axis\\": "src/graph/axis",
-            "Amenadiel\\JpGraph\\Image\\": "src/image",
-            "Amenadiel\\JpGraph\\Plot\\": "src/plot",
-            "Amenadiel\\JpGraph\\Text\\": "src/text",
-            "Amenadiel\\JpGraph\\Themes\\": "src/themes",
-            "Amenadiel\\JpGraph\\Util\\": "src/util"
+            "hbvsoft\\JpGraph\\": "src/",
+            "hbvsoft\\JpGraph\\Graph\\": "src/graph",
+            "hbvsoft\\JpGraph\\Graph\\Scale\\": "src/graph/scale",
+            "hbvsoft\\JpGraph\\Graph\\Tick\\": "src/graph/tick",
+            "hbvsoft\\JpGraph\\Graph\\Axis\\": "src/graph/axis",
+            "hbvsoft\\JpGraph\\Image\\": "src/image",
+            "hbvsoft\\JpGraph\\Plot\\": "src/plot",
+            "hbvsoft\\JpGraph\\Text\\": "src/text",
+            "hbvsoft\\JpGraph\\Themes\\": "src/themes",
+            "hbvsoft\\JpGraph\\Util\\": "src/util"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Amenadiel\\JpGraph\\UnitTest\\": "tests"
+            "hbvsoft\\JpGraph\\UnitTest\\": "tests"
         }
     },
     "scripts": {

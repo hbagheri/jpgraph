@@ -49,8 +49,8 @@ composer require hbagheri/jpgraph
 ```php
 require_once 'vendor/autoload.php';
 
-use Amenadiel\JpGraph\Graph;
-use Amenadiel\JpGraph\Plot;
+use hbvsoft\JpGraph\Graph;
+use hbvsoft\JpGraph\Plot;
 
 // ایجاد نمودار پای
 $graph = new Graph\PieGraph(350, 250);

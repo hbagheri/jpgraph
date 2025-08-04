@@ -5,9 +5,9 @@
  */
 
 require_once __DIR__ . '/../../src/config.inc.php';
-use Amenadiel\JpGraph\Graph;
-use Amenadiel\JpGraph\Plot;
-use Amenadiel\JpGraph\Util;
+use hbvsoft\JpGraph\Graph;
+use hbvsoft\JpGraph\Plot;
+use hbvsoft\JpGraph\Util;
 
 // Original data points
 $xdata = [1, 3, 5, 7, 9, 12, 15, 17.1];

@@ -5,10 +5,10 @@
  */
 
 require_once __DIR__ . '/../../src/config.inc.php';
-use Amenadiel\JpGraph\Graph;
+use hbvsoft\JpGraph\Graph;
 
 require_once 'jpgraph/jpgraph_bar.php';
-use Amenadiel\JpGraph\Plot;
+use hbvsoft\JpGraph\Plot;
 
 $theme = isset($_GET['theme']) ? $_GET['theme'] : null;
 $data  = [

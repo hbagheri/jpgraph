@@ -6,8 +6,8 @@
 
 require_once __DIR__ . '/../../src/config.inc.php';
 
-use Amenadiel\JpGraph\Graph;
-use Amenadiel\JpGraph\Text;
+use hbvsoft\JpGraph\Graph;
+use hbvsoft\JpGraph\Text;
 
 // Scale we are using
 $ymax = 24;

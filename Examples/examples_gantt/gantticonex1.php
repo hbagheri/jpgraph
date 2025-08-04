@@ -5,9 +5,9 @@
  */
 
 require_once __DIR__ . '/../../src/config.inc.php';
-use Amenadiel\JpGraph\Graph;
-use Amenadiel\JpGraph\Image;
-use Amenadiel\JpGraph\Plot;
+use hbvsoft\JpGraph\Graph;
+use hbvsoft\JpGraph\Image;
+use hbvsoft\JpGraph\Plot;
 
 // Basic Gantt graph
 $graph = new Graph\GanttGraph();

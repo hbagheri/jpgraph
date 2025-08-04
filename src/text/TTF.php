@@ -4,9 +4,9 @@
  * JPGraph v4.0.3
  */
 
-namespace Amenadiel\JpGraph\Text;
+namespace hbvsoft\JpGraph\Text;
 
-use Amenadiel\JpGraph\Util;
+use hbvsoft\JpGraph\Util;
 
 /**
  * @class TTF

@@ -13,11 +13,11 @@
  * // Copyright (c) Asial Corporation. All rights reserved.
  */
 
-namespace Amenadiel\JpGraph\Themes;
+namespace hbvsoft\JpGraph\Themes;
 
-use Amenadiel\JpGraph\Graph;
-use Amenadiel\JpGraph\Image;
-use Amenadiel\JpGraph\Util;
+use hbvsoft\JpGraph\Graph;
+use hbvsoft\JpGraph\Image;
+use hbvsoft\JpGraph\Util;
 
 /**
  * @class

@@ -6,8 +6,8 @@
 
 require_once __DIR__ . '/../../src/config.inc.php';
 
-use Amenadiel\JpGraph\Graph;
-use Amenadiel\JpGraph\Plot;
+use hbvsoft\JpGraph\Graph;
+use hbvsoft\JpGraph\Plot;
 
 $n = 8;
 for ($i = 0; $i < $n; ++$i) {

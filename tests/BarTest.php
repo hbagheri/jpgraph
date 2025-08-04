@@ -8,11 +8,11 @@
  * @group ready
  *
  * @internal
- * 
+ *
  */
 class BarTest extends \Codeception\Test\Unit
 {
-    use Amenadiel\JpGraph\UnitTest\UnitTestTrait;
+    use hbvsoft\JpGraph\UnitTest\UnitTestTrait;
 
     public static $fixTures = [];
 

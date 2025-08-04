@@ -8,8 +8,8 @@
 
 require_once __DIR__ . '/../../src/config.inc.php';
 
-use Amenadiel\JpGraph\Graph;
-use Amenadiel\JpGraph\Plot;
+use hbvsoft\JpGraph\Graph;
+use hbvsoft\JpGraph\Plot;
 
 $data = [
     [12, 7, 3, 15],

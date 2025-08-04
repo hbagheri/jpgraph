@@ -5,7 +5,7 @@
  */
 
 require_once __DIR__ . '/../../src/config.inc.php';
-use Amenadiel\JpGraph\Graph;
+use hbvsoft\JpGraph\Graph;
 
 //
 // The data for the graphs
