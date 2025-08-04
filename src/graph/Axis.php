@@ -187,8 +187,9 @@ class Axis extends AxisPrototype
                 // that holds the labels set by the user. If the user hasn't
                 // specified any values we use whats in the automatically asigned
                 // labels in the maj_ticks_label
-                if (isset($this->ticks_label[$i * $m])) {
-                    $label = $this->ticks_label[$i * $m];
+                $index = (int)($i * $m);
+                if (isset($this->ticks_label[$index])) {
+                    $label = $this->ticks_label[$index];
                 } else {
                     if ($aAbsLabel) {
                         $label = abs($this->scale->ticks->maj_ticks_label[$i]);
