@@ -573,7 +573,7 @@ if (!\function_exists('imagetypes') || !\function_exists('imagecreatefromstring'
 }
 
 if (INSTALL_PHP_ERR_HANDLER) {
-    \set_error_handler('\Amenadiel\JpGraph\Util\Helper::phpErrorHandler');
+    \set_error_handler('\hbvsoft\JpGraph\Util\Helper::phpErrorHandler');
 }
 
 //

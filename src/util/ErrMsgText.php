@@ -112,7 +112,7 @@ class ErrMsgText
 
 // Setup the default handler
 global $__jpg_OldHandler;
-$__jpg_OldHandler = set_exception_handler(['Amenadiel\JpGraph\Util\JpGraphException', 'defaultHandler']);
+$__jpg_OldHandler = set_exception_handler(['hbvsoft\JpGraph\Util\JpGraphException', 'defaultHandler']);
 
 if (!USE_IMAGE_ERROR_HANDLER) {
     JpGraphError::SetImageFlag(false);
