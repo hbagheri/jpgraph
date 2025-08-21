@@ -37,21 +37,23 @@
     },
     "autoload": {
         "psr-4": {
-            "hbvsoft\\JpGraph\\": "src/",
-            "hbvsoft\\JpGraph\\Graph\\": "src/graph",
-            "hbvsoft\\JpGraph\\Graph\\Scale\\": "src/graph/scale",
-            "hbvsoft\\JpGraph\\Graph\\Tick\\": "src/graph/tick",
-            "hbvsoft\\JpGraph\\Graph\\Axis\\": "src/graph/axis",
-            "hbvsoft\\JpGraph\\Image\\": "src/image",
-            "hbvsoft\\JpGraph\\Plot\\": "src/plot",
-            "hbvsoft\\JpGraph\\Text\\": "src/text",
-            "hbvsoft\\JpGraph\\Themes\\": "src/themes",
-            "hbvsoft\\JpGraph\\Util\\": "src/util"
+            "HBVSoft\\Charts\\": "Charts/",
+            "HBVSoft\\Charts\\Strategies\\": "Charts/Strategies/",
+            "HBVSoft\\JpGraph\\": "src/",
+            "HBVSoft\\JpGraph\\Graph\\": "src/graph",
+            "HBVSoft\\JpGraph\\Graph\\Scale\\": "src/graph/scale",
+            "HBVSoft\\JpGraph\\Graph\\Tick\\": "src/graph/tick",
+            "HBVSoft\\JpGraph\\Graph\\Axis\\": "src/graph/axis",
+            "HBVSoft\\JpGraph\\Image\\": "src/image",
+            "HBVSoft\\JpGraph\\Plot\\": "src/plot",
+            "HBVSoft\\JpGraph\\Text\\": "src/text",
+            "HBVSoft\\JpGraph\\Themes\\": "src/themes",
+            "HBVSoft\\JpGraph\\Util\\": "src/util"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "hbvsoft\\JpGraph\\UnitTest\\": "tests"
+            "HBVSoft\\JpGraph\\UnitTest\\": "tests"
         }
     },
     "scripts": {
